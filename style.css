@@ -61,8 +61,9 @@ html {
 }
 /* container style */
 .container {
-    min-width:375px;
-    padding:0 1em;
+    min-width: 23.4375em;
+    width: 34.0625em;
+    padding: 0 1em;
 }
 /* upper */
 .upper {
@@ -123,7 +124,7 @@ main h1 {
     width: 80%;
     position: relative;
 }
-/* i dont know how to add opacity on the graph without affetcing the pseudoclass::before any suggestion or tips */
+/* i dont know how to add opacity on the graph without affecting the pseudoclass::before any suggestion or tips */
 .graph::before {
     content: var(--content, '');
     display: flex;
@@ -172,11 +173,9 @@ main h1 {
     color: var(--Mediumbrown);
 }
 
+/* bigger-size */
 @media (min-width:900px) {
     
-    .container {
-     max-width: 34.0625em;
-    }
 
     .box {
          width: 3.25em;
@@ -208,7 +207,7 @@ main h1 {
         font-size: 2rem;
     }
 
-    
+/*   pseudo::class   */
     .graph::before {
     content: var(--content, '');
     display: flex;
