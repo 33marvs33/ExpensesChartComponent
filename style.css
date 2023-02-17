@@ -62,6 +62,7 @@ html {
 /* container style */
 .container {
     min-width:375px;
+    padding:0 1em;
     max-width: 34.0625em;
 }
 /* upper */
