@@ -63,7 +63,6 @@ html {
 .container {
     min-width:375px;
     padding:0 1em;
-    max-width: 34.0625em;
 }
 /* upper */
 .upper {
@@ -174,6 +173,10 @@ main h1 {
 }
 
 @media (min-width:900px) {
+    
+    .container {
+     max-width: 34.0625em;
+    }
 
     .box {
          width: 3.25em;
