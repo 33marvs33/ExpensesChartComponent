@@ -59,7 +59,11 @@ html {
     align-items: center;
     flex-wrap: wrap;
 }
-
+/* container style */
+.container {
+    min-width:375px;
+    max-width: 34.0625em;
+}
 /* upper */
 .upper {
     background-color: var(--Softred);
@@ -169,9 +173,7 @@ main h1 {
 }
 
 @media (min-width:900px) {
-    .container {
-        width: 34.0625em;
-    }
+
     .box {
          width: 3.25em;
          text-align: center;
