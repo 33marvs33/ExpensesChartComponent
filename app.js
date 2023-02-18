@@ -28,7 +28,7 @@ const data = [
     amount: 25.48,
   },
 ];
-// graph-container//
+// graph-container innerhtml//
 const graphContainer = document.querySelector(".graph-container");
 data.forEach((data) => {
   graphContainer.innerHTML += `
@@ -37,10 +37,10 @@ data.forEach((data) => {
         <p>${data.day}</p>
     </div>
     `;
-
+// adding eventlistener on screen size//
     window.addEventListener('resize', () => {
       let box = document.querySelectorAll('.box');
-      if(this.innerWidth >= 700) {
+      if(this.innerWidth >= 550) {
         box.forEach(squareBox => {
           squareBox.style.width = '70px'
         })
@@ -52,7 +52,7 @@ data.forEach((data) => {
       }
     })
 });
-// graph//
+// targeting  pseudoclass graph:before content//
     const graph = document.querySelectorAll('.graph');
 graph.forEach((grap,index) => {
     grap.style.setProperty("--content",`'${data[index].amount}'`)
